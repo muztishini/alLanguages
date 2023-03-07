@@ -1,7 +1,6 @@
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView
 from rest_framework.utils.json import loads, dumps
 from rest_framework.views import APIView
-
 from word.models import Word, WordTranslate, Progress
 from word.serializers import WordSerializer, QuerySerializer, TranslateSerializer
 from rest_framework.decorators import api_view

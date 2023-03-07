@@ -5,8 +5,6 @@ from django.db import models
 from my_user.manager import UserManager
 from language.models import Language
 
-# Create your models here.
-
 
 class User(AbstractUser):
     """ User model """
