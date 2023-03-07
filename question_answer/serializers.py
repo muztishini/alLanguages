@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from kroshakov.models import Question, Answer, Users
-
+from question_answer.models import Question, Answer
+from my_user.models import User
 
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,5 +16,5 @@ class AnswerSerializer(serializers.ModelSerializer):
 
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Users
+        model = User
         fields = '__all__'

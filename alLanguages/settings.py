@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'my_user',
     'language',
     'word',
-    'kroshakov'
+    'question_answer'
 ]
 
 MIDDLEWARE = [

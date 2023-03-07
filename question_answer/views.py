@@ -1,6 +1,8 @@
 from rest_framework import viewsets
-from kroshakov.models import Question, Answer, Users
-from kroshakov.serializers import QuestionSerializer, AnswerSerializer, UsersSerializer
+from question_answer.models import Question, Answer
+from my_user.models import User
+from question_answer.serializers import QuestionSerializer, AnswerSerializer
+from my_user.serializers import UserSerializer
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
@@ -14,5 +16,5 @@ class AnswerViewSet(viewsets.ModelViewSet):
 
 
 class UsersViewSet(viewsets.ModelViewSet):
-    queryset = Users.objects.all()
-    serializer_class = UsersSerializer
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

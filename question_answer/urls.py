@@ -1,5 +1,5 @@
 from rest_framework.routers import DefaultRouter
-from kroshakov.views import QuestionViewSet, AnswerViewSet,UsersViewSet
+from question_answer.views import QuestionViewSet, AnswerViewSet, UsersViewSet
 
 router = DefaultRouter()
 

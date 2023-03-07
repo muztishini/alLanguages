@@ -24,5 +24,5 @@ urlpatterns = [
     path('api/my-user/', include('my_user.urls')),
     path('api/language/', include('language.urls')),
     path('api/word/', include('word.urls')),
-    path('api/kroshakov/', include('kroshakov.urls')),
+    path('api/question_answer/', include('question_answer.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
